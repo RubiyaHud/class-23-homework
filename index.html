@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class # 23</title>
+</head>
+
+<body>
+    <h1>JavaScript Comparison (Comparison Operators and Logical Operators)</h1>
+    <p style="font-size: 30px; color: sienna;" id="demo"></p>
+    <p id="demo2"></p>
+    <img src="images/grading_system.jpg" alt="grading_system">
+
+    <script>
+        //Grading system
+        var mark = prompt("Enter the Mark (0-100) to get the Grade & GPA");
+        var grade = "F";
+        var gpa = "0.00";
+        console.log("Mark is :" + mark);
+
+        if (mark >= 90 && mark <= 100) {
+            grade = "A+";
+            gpa = "4.00";
+        } 
+        else if (mark >= 85 && mark <= 89) {
+            grade = "A";
+            gpa = "3.90";
+        } 
+        else if (mark >= 80 && mark <= 84) {
+            grade = "A-";
+            gpa = "3.70";
+        } 
+        else if (mark >= 77 && mark <= 79) {
+            grade = "B+";
+            gpa = "3.30";
+        } 
+        else if (mark >= 73 && mark <= 76) {
+            grade = "B";
+            gpa = "3.00";
+        } 
+        else if (mark >= 70 && mark <= 72) {
+            grade = "B-";
+            gpa = "2.70";
+        } 
+        else if (mark >= 67 && mark <= 69) {
+            grade = "C+";
+            gpa = "2.30";
+        } 
+        else if (mark >= 63 && mark <= 66) {
+            grade = "C";
+            gpa = "2.00";
+        } 
+        else if (mark >= 60 && mark <= 62) {
+            grade = "C-";
+            gpa = "1.70";
+        } 
+        else if (mark >= 57 && mark <= 59) {
+            grade = "D+";
+            gpa = "1.30";
+        } 
+        else if (mark >= 53 && mark <= 56) {
+            grade = "D";
+            gpa = "1.00";
+        } 
+        else if (mark >= 50 && mark <= 52) {
+            grade = "D-";
+            gpa = "0.70";
+        } 
+        else if (mark >= 0 && mark <= 49) {
+            grade = "F";
+            gpa = "0.00";
+        } 
+        else {
+            document.getElementById("demo2").innerHTML = "Something went wrong, please check the Mark!" 
+            
+        }
+        document.getElementById("demo").innerHTML = "Mark is: " + mark + "<br> Grade is: " + grade + "<br> GPA is: " + gpa;
+
+    </script>
+</body>
+
+</html>
